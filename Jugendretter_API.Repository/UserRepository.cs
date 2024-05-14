@@ -25,7 +25,7 @@ namespace Jugendretter_API.Database
 
         }
 
-        public async Task Delete(int ID)
+        public async Task Delete(Guid ID)
         {
             var UserToDelete = await context.Users.FindAsync(ID);
             context.Users.Remove(UserToDelete!);
@@ -38,7 +38,7 @@ namespace Jugendretter_API.Database
             return await context.Users.ToListAsync();
         }
 
-        public async Task<User> Get(int ID)
+        public async Task<User> Get(Guid ID)
         {
             var findUser = await context.Users.FindAsync(ID);
             if (findUser != null)

@@ -8,15 +8,19 @@
 
   <ItemGroup>
     <Compile Remove="Database\**" />
+    <Compile Remove="Migrations\**" />
     <Compile Remove="Models\**" />
     <Compile Remove="Repositories\**" />
     <Content Remove="Database\**" />
+    <Content Remove="Migrations\**" />
     <Content Remove="Models\**" />
     <Content Remove="Repositories\**" />
     <EmbeddedResource Remove="Database\**" />
+    <EmbeddedResource Remove="Migrations\**" />
     <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="Repositories\**" />
     <None Remove="Database\**" />
+    <None Remove="Migrations\**" />
     <None Remove="Models\**" />
     <None Remove="Repositories\**" />
   </ItemGroup>

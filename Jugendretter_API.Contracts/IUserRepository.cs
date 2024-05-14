@@ -1,4 +1,5 @@
 ﻿using Jugendretter_API.Entities;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -9,13 +10,13 @@ namespace Jugendretter_API.Contracts
 
         Task<List<User>> Get();
 
-        Task<User> Get(int ID);
+        Task<User> Get(Guid ID);
 
         Task<User> Create(User user);
 
         Task Update(User user);
 
-        Task Delete(int ID);
+        Task Delete(Guid ID);
 
     }
 }
